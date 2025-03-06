@@ -20,7 +20,7 @@ export function RichTextBlock({ block }: { block: RichTextBlock }) {
       <BlocksRenderer
         content={block.content}
         blocks={{
-          image: ({ image }) => {
+          image: ({ image }: any) => {
             console.log("image", image);
             if (!image) return null;
             return (
